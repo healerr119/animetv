@@ -137,7 +137,7 @@ header {
 }
 ol, ul{
   list-style: none;
-  padding: 0;
+  padding: 0 !important;
 }
 .app.footer .title{
   color: #b3b3b3;
@@ -186,6 +186,7 @@ a {
   padding: 10px;
   border-radius: 5px;
   background-color: #00c9ff;
+  cursor: pointer;
 }
  .post-content{
   padding-bottom: 20px;
@@ -227,6 +228,15 @@ a {
 }
 .list-single .sub-name{
   color: #c3bfbf;
+}
+.list-single-film .list-single .col-md-3{
+  padding-bottom: 20px;
+}
+.list-single-film .list-single .col-md-3 img{
+  border-radius: 10px;
+}
+.list-single-film .list-single .col-md-3:hover{
+      filter: drop-shadow(0 0 8px #ff8800);
 }
 /* end post detail  */
 @media only screen and (max-width: 420px){
