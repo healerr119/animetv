@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
@@ -6,7 +7,7 @@ export default function ListFilm() {
   return (
     <>
         <div className='container list-film'>
-            <h3 className='title'>Thần Chết Tập Sự</h3>
+            <h3 className='title'>Phim Bộ</h3>
             <Swiper
                 // install Swiper modules
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -20,7 +21,7 @@ export default function ListFilm() {
                 >
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime" />
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -30,7 +31,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -40,7 +41,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -50,7 +51,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -60,7 +61,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -70,7 +71,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -80,7 +81,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -90,7 +91,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -100,7 +101,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -110,7 +111,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -120,7 +121,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -130,7 +131,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -144,7 +145,7 @@ export default function ListFilm() {
             </Swiper>
         </div>
         <div className='container list-film'>
-            <h3 className='title'>Thần Chết Tập Sự</h3>
+            <h3 className='title'>Phim Lẻ</h3>
             <Swiper
                 // install Swiper modules
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -158,7 +159,7 @@ export default function ListFilm() {
                 >
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime" />
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -168,7 +169,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -178,7 +179,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -188,7 +189,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -198,7 +199,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -208,7 +209,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -218,7 +219,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -228,7 +229,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -238,7 +239,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -248,7 +249,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -258,7 +259,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -268,7 +269,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -282,7 +283,7 @@ export default function ListFilm() {
             </Swiper>
         </div>
         <div className='container list-film'>
-            <h3 className='title'>Thần Chết Tập Sự</h3>
+            <h3 className='title'>Anime</h3>
             <Swiper
                 // install Swiper modules
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -296,7 +297,7 @@ export default function ListFilm() {
                 >
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime" />
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -306,7 +307,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -316,7 +317,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -326,7 +327,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -336,7 +337,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -346,7 +347,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -356,7 +357,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -366,7 +367,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -376,7 +377,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -386,7 +387,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -396,7 +397,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>
@@ -406,7 +407,7 @@ export default function ListFilm() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='swiper-image'>
-                        <img src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150} />
+                        <Image src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_thumbnails/tap_1__1_-46b04c7a3033-1596601725874-KYkKyUOJ.jpg?v=0&maxW=320&format=webp" width={250} height={150}  alt="image anime"/>
                     </div>
                     <h3 className='name'> Thần Chết Tập Sự - Tập 8</h3>
                     {/* <div className='item'>

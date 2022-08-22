@@ -7,7 +7,7 @@ export default function Header() {
       <header className='w-100'>
         <nav className="container navbar navbar-expand-lg navbar-light ">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="./">
                 <Image src='https://cdn.popsww.com/popsapp/assets/images/icons/logo-pops.png?format=webp' width={120} height={40} alt="logo" />
             </a>
             <button
@@ -24,34 +24,33 @@ export default function Header() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
-                    Trang Chủ
+                  <a className="nav-link active" aria-current="page" href="/phim-bo">
+                    Phim Bộ
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Anime Mới
+                  <a className="nav-link" href="/phim-le">
+                    Phim Lẻ
                   </a>
                 </li>
                 <li className="nav-item dropdown">
                   <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
+                    className="nav-link"
+                    href="/anime"
                     id="navbarDropdown"
                     role="button"
                     aria-expanded="false"
                   >
-                    Anime Hot
+                    Anime Hay
                   </a>
                 </li>
                 <li className="nav-item">
                   <a
-                    className="nav-link disabled"
-                    href="#"
-                    tabIndex="-1"
+                    className="nav-link "
+                    href="/shows"
                     aria-disabled="true"
                   >
-                    Anime Hay
+                    Shows
                   </a>
                 </li>
               </ul>
