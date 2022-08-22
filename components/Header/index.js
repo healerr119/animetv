@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 
 export default function Header() {
@@ -24,17 +25,17 @@ export default function Header() {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/phim-bo">
+                  <Link className="nav-link active" aria-current="page" href="/phim-bo">
                     Phim Bộ
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/phim-le">
+                  <Link className="nav-link" href="/phim-le">
                     Phim Lẻ
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item dropdown">
-                  <a
+                  <Link
                     className="nav-link"
                     href="/anime"
                     id="navbarDropdown"
@@ -42,16 +43,16 @@ export default function Header() {
                     aria-expanded="false"
                   >
                     Anime Hay
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="nav-link "
                     href="/shows"
                     aria-disabled="true"
                   >
                     Shows
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <form className="d-flex search-header">

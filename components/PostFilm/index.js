@@ -26,7 +26,7 @@ export default function PostFilm() {
             </div>
           </div>
           <div className="col-md-9">
-            <table class="table">
+            <table className="table">
               <tbody>
                 <tr>
                   <th scope="row">Trạng thái </th>
@@ -38,35 +38,35 @@ export default function PostFilm() {
                 </tr>
                 <tr>
                   <th scope="row">Thời Lượng </th>
-                  <td colspan="2">30 Phút</td>
+                  <td colSpan="2">30 Phút</td>
                 </tr>
                 <tr>
                   <th scope="row">Năm Phát Hành </th>
-                  <td colspan="2">2002</td>
+                  <td colSpan="2">2002</td>
                 </tr>
                 <tr>
                   <th scope="row">Chất Lượng </th>
-                  <td colspan="2">HD</td>
+                  <td colSpan="2">HD</td>
                 </tr>
                 <tr>
                   <th scope="row">Ngôn Ngữ </th>
-                  <td colspan="2">Vietsub</td>
+                  <td colSpan="2">Vietsub</td>
                 </tr>
                 <tr>
                   <th scope="row">Đạo Diễn </th>
-                  <td colspan="2">Đang cập nhật</td>
+                  <td colSpan="2">Đang cập nhật</td>
                 </tr>
                 <tr>
                   <th scope="row">Diễn Viên </th>
-                  <td colspan="2">Đang cập nhật</td>
+                  <td colSpan="2">Đang cập nhật</td>
                 </tr>
                 <tr>
                   <th scope="row">Thể Loại </th>
-                  <td colspan="2">Tâm Lý, Võ Thuật</td>
+                  <td colSpan="2">Tâm Lý, Võ Thuật</td>
                 </tr>
                 <tr>
                   <th scope="row">Quốc Gia </th>
-                  <td colspan="2">Hồng Kông</td>
+                  <td colSpan="2">Hồng Kông</td>
                 </tr>
               </tbody>
             </table>

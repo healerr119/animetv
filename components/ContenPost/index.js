@@ -4,11 +4,11 @@ import Image from 'next/image';
 export default function ContentPost() {
   return (
     <div className="post-content">
-            <div class="accordion" id="accordionExample">
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
+            <div className="accordion" id="accordionExample">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingOne">
                   <button
-                    class="accordion-button"
+                    className="accordion-button"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseOne"
@@ -20,13 +20,13 @@ export default function ContentPost() {
                 </h2>
                 <div
                   id="collapseOne"
-                  class="accordion-collapse collapse show"
+                  className="accordion-collapse collapse show"
                   aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
+                  <div className="accordion-body">
                     Diệp Vấn 4 là câu chuyện tiếp theo khi kết thúc phần 3, Diệp
-                    Vấn trở thành "gà trống nuôi con" khi vợ mất vì bệnh ung
+                    Vấn trở thành gà trống nuôi con khi vợ mất vì bệnh ung
                     thư. Phần 4 tiếp tục mạch truyện trước nhưng mốc thời gian
                     là vào năm 1964, lúc này Diệp Vấn đã hơn 70 tuổi. Phát hiện
                     mình bị ung thư thanh quản do nhiều năm hút thuốc, chưởng
@@ -38,10 +38,10 @@ export default function ContentPost() {
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingTwo">
                   <button
-                    class="accordion-button collapsed"
+                    className="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo"
@@ -53,11 +53,11 @@ export default function ContentPost() {
                 </h2>
                 <div
                   id="collapseTwo"
-                  class="accordion-collapse collapse"
+                  className="accordion-collapse collapse"
                   aria-labelledby="headingTwo"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
+                  <div className="accordion-body">
                     <strong>SEVER: VIETSUB #1</strong>{" "}
                     <div>
                         <Link href="/">
@@ -69,10 +69,10 @@ export default function ContentPost() {
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingThree">
                   <button
-                    class="accordion-button collapsed"
+                    className="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseThree"
@@ -84,11 +84,11 @@ export default function ContentPost() {
                 </h2>
                 <div
                   id="collapseThree"
-                  class="accordion-collapse collapse"
+                  className="accordion-collapse collapse"
                   aria-labelledby="headingThree"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
+                  <div className="accordion-body">
                       <div className='comment'>
                           <div className='row'>
                               <div className='col-md-1'>
