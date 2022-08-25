@@ -3,12 +3,12 @@ import HotSeries from '../HotSeries'
 import ListFilm from '../ListFilm'
 import News from '../News'
 
-export default function Main() {
+export default function Main(DataFilm) {
   return (
     <div className='app main'>
-        <HotSeries />
+        {/* <HotSeries /> */}
         <News />
-        <ListFilm />
+        <ListFilm ListFilm = {DataFilm} />
     </div>
   )
 }

@@ -1,18 +1,23 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination,Autoplay, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+
 export default function News() {
   return (
     <div className='container news'>
         <h3 className='title'>Anime Mới Cập Nhật</h3>
         <Swiper
             // install Swiper modules
-            modules={[Navigation, Pagination, Scrollbar, A11y]}
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
             spaceBetween={50}
-            slidesPerView={5}
+            slidesPerView={6}
+            autoplay={{
+                "delay": 2500,
+                "disableOnInteraction": false
+            }}
             navigation
             // pagination={{ clickable: true }}
             // scrollbar={{ draggable: true }}

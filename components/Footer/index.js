@@ -8,9 +8,9 @@ export default function Footer() {
              <div className='row'>
                   <div className='col-md-4'>
                         <Image
-                          src="https://cdn.popsww.com/popsapp/assets/images/icons/logo-pops.png?format=webp"
+                          src="https://phimhayhd.b-cdn.net/phimhaydd.png"
                           height={50}
-                          width={150}
+                          width={180}
                           alt=""
                          />
                          <div className='excerp-footer'>

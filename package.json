@@ -16,7 +16,8 @@
     "react-dom": "18.2.0",
     "swiper": "^8.3.2",
     "video.js": "^7.20.2",
-    "videojs": "^1.0.0"
+    "videojs": "^1.0.0",
+    "wrap-text": "^1.0.9"
   },
   "devDependencies": {
     "eslint": "8.22.0",

@@ -9,7 +9,7 @@ export default function Header() {
         <nav className="container navbar navbar-expand-lg navbar-light ">
           <div className="container-fluid">
             <a className="navbar-brand" href="./">
-                <Image src='https://cdn.popsww.com/popsapp/assets/images/icons/logo-pops.png?format=webp' width={120} height={40} alt="logo" />
+                <Image src='https://phimhayhd.b-cdn.net/phimhaydd.png' width={170} height={40} alt="logo" />
             </a>
             <button
               className="navbar-toggler"
@@ -59,7 +59,7 @@ export default function Header() {
                 <input
                   className="form-control me-2"
                   type="search"
-                  placeholder="Tên phim"
+                  placeholder="Tên phim..."
                   aria-label="Search"
                 />
                 {/* <button className="btn btn-outline-success" type="submit">

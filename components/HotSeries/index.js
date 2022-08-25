@@ -18,8 +18,12 @@ export default function HotSeries() {
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={50}
-            slidesPerView={5}
+            slidesPerView={6}
             navigation
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+            }}
             // pagination={{ clickable: true }}
             // scrollbar={{ draggable: true }}
             // onSwiper={(swiper) => console.log(swiper)}

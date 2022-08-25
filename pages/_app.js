@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
 function MyApp({ Component, pageProps }) {
   useEffect(()=>{
       import("bootstrap/dist/js/bootstrap");
