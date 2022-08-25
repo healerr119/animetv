@@ -9,7 +9,7 @@ export default function ListSingleFilm() {
         <div className='list-single'>
            <div className='row'>
                 <div className='col-md-3'>
-                  <Link href="/shows/diep-van">
+                  <Link href="/shows">
                     <a>
                         <Image 
                             src="http://2phimmoi.net/wp-content/uploads/2022/08/lam-cho-92873-thumbnail.jpg"
@@ -26,7 +26,7 @@ export default function ListSingleFilm() {
                     </Link>
                 </div>
                 <div className='col-md-3'>
-                  <Link href="/shows/diep-van">
+                  <Link href="/shows">
                     <a>
                         <Image 
                             src="http://2phimmoi.net/wp-content/uploads/2022/08/lam-cho-92873-thumbnail.jpg"
@@ -43,7 +43,7 @@ export default function ListSingleFilm() {
                     </Link>
                 </div>
                 <div className='col-md-3'>
-                  <Link href="/shows/diep-van">
+                  <Link href="/shows">
                     <a>
                         <Image 
                             src="http://2phimmoi.net/wp-content/uploads/2022/08/lam-cho-92873-thumbnail.jpg"
@@ -60,7 +60,7 @@ export default function ListSingleFilm() {
                     </Link>
                 </div>
                 <div className='col-md-3'>
-                  <Link href="/shows/diep-van">
+                  <Link href="/shows">
                     <a>
                         <Image 
                             src="http://2phimmoi.net/wp-content/uploads/2022/08/lam-cho-92873-thumbnail.jpg"
@@ -77,7 +77,7 @@ export default function ListSingleFilm() {
                     </Link>
                 </div>
                 <div className='col-md-3'>
-                  <Link href="/shows/diep-van">
+                  <Link href="/shows">
                     <a>
                         <Image 
                             src="http://2phimmoi.net/wp-content/uploads/2022/08/lam-cho-92873-thumbnail.jpg"
@@ -94,7 +94,7 @@ export default function ListSingleFilm() {
                     </Link>
                 </div>
                 <div className='col-md-3'>
-                  <Link href="/shows/diep-van">
+                  <Link href="/shows">
                     <a>
                         <Image 
                             src="http://2phimmoi.net/wp-content/uploads/2022/08/lam-cho-92873-thumbnail.jpg"
@@ -111,7 +111,7 @@ export default function ListSingleFilm() {
                     </Link>
                 </div>
                 <div className='col-md-3'>
-                  <Link href="/shows/diep-van">
+                  <Link href="/shows">
                     <a>
                         <Image 
                             src="http://2phimmoi.net/wp-content/uploads/2022/08/lam-cho-92873-thumbnail.jpg"
@@ -128,7 +128,7 @@ export default function ListSingleFilm() {
                     </Link>
                 </div>
                 <div className='col-md-3'>
-                  <Link href="/shows/diep-van">
+                  <Link href="/shows">
                     <a>
                         <Image 
                             src="http://2phimmoi.net/wp-content/uploads/2022/08/lam-cho-92873-thumbnail.jpg"
@@ -145,7 +145,7 @@ export default function ListSingleFilm() {
                     </Link>
                 </div>
                 <div className='col-md-3'>
-                  <Link href="/shows/diep-van">
+                  <Link href="/shows">
                     <a>
                         <Image 
                             src="http://2phimmoi.net/wp-content/uploads/2022/08/lam-cho-92873-thumbnail.jpg"
@@ -162,7 +162,7 @@ export default function ListSingleFilm() {
                     </Link>
                 </div>
                 <div className='col-md-3'>
-                  <Link href="/shows/diep-van">
+                  <Link href="/shows">
                     <a>
                         <Image 
                             src="http://2phimmoi.net/wp-content/uploads/2022/08/lam-cho-92873-thumbnail.jpg"
@@ -179,7 +179,7 @@ export default function ListSingleFilm() {
                     </Link>
                 </div>
                 <div className='col-md-3'>
-                  <Link href="/shows/diep-van">
+                  <Link href="/shows">
                     <a>
                         <Image 
                             src="http://2phimmoi.net/wp-content/uploads/2022/08/lam-cho-92873-thumbnail.jpg"
@@ -196,7 +196,7 @@ export default function ListSingleFilm() {
                     </Link>
                 </div>
                 <div className='col-md-3'>
-                  <Link href="/shows/diep-van">
+                  <Link href="/shows">
                     <a>
                         <Image 
                             src="http://2phimmoi.net/wp-content/uploads/2022/08/lam-cho-92873-thumbnail.jpg"

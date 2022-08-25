@@ -7,7 +7,7 @@ export default function Main(DataFilm) {
   return (
     <div className='app main'>
         {/* <HotSeries /> */}
-        <News />
+        {/* <News /> */}
         <ListFilm ListFilm = {DataFilm} />
     </div>
   )

@@ -2,59 +2,63 @@ import Image from 'next/image'
 import Link from 'next/link';
 import React from 'react'
 import ContentPost from '../ContenPost';
+import PlayFilm from '../PlayFilm';
 
-export default function PostFilm() {
+export default function PostFilm(filmDetail) {
+  console.log(filmDetail);
+  const episodes = filmDetail.filmDetail.data.episodes;
+  const movie = filmDetail.filmDetail.data.movie;
   return (
     <div className="app post">
       <div className="container post-detail">
         <div className="row">
-          <h1 className="title">DIỆP VẤN 4: HỒI CUỐI </h1>
+          <h1 className="title">{movie.name}</h1>
           <div className="title-en">
-            <i> Ip Man 4: The Finale</i>
+            <i> {movie.origin_name}</i>
           </div>
           <div className="col-md-3 image-post">
             <Image
-              src="https://popsimg.akamaized.net/api/v2/containers/file2/cms_topic/slidebanner_mobile-9b0471102a38-1659949080108-QXKzN1Bx.jpg?v=0&maxW=300&format=webp"
+              src={movie.poster_url}
               width={300}
               height={370}
               alt="image film"
             />
-            <div className="btn-play">
+            {/* <div className="btn-play">
               <Link className="xem-ngay" href="/xem-phim">
                 <span>Xem Ngay</span>
               </Link>
-            </div>
+            </div> */}
           </div>
           <div className="col-md-9">
             <table className="table">
               <tbody>
                 <tr>
                   <th scope="row">Trạng thái </th>
-                  <td>Full</td>
+                  <td>{episodes[0].server_data[0].name}</td>
                 </tr>
                 <tr>
                   <th scope="row">Số tập </th>
-                  <td> 1 tập</td>
+                  <td> {movie.episode_total} tập</td>
                 </tr>
                 <tr>
                   <th scope="row">Thời Lượng </th>
-                  <td colSpan="2">30 Phút</td>
+                  <td colSpan="2">{movie.time}</td>
                 </tr>
                 <tr>
                   <th scope="row">Năm Phát Hành </th>
-                  <td colSpan="2">2002</td>
+                  <td colSpan="2">{movie.year}</td>
                 </tr>
                 <tr>
                   <th scope="row">Chất Lượng </th>
-                  <td colSpan="2">HD</td>
+                  <td colSpan="2">{movie.quality}</td>
                 </tr>
                 <tr>
                   <th scope="row">Ngôn Ngữ </th>
-                  <td colSpan="2">Vietsub</td>
+                  <td colSpan="2">{movie.lang}</td>
                 </tr>
                 <tr>
                   <th scope="row">Đạo Diễn </th>
-                  <td colSpan="2">Đang cập nhật</td>
+                  <td colSpan="2">{movie.director[0] ? movie.director[0] : 'Đang cập nhật'}</td>
                 </tr>
                 <tr>
                   <th scope="row">Diễn Viên </th>
@@ -62,16 +66,17 @@ export default function PostFilm() {
                 </tr>
                 <tr>
                   <th scope="row">Thể Loại </th>
-                  <td colSpan="2">Tâm Lý, Võ Thuật</td>
+                  <td colSpan="2">{movie.category[0] ? movie.category[0].name : 'Đang cập nhật'}</td>
                 </tr>
                 <tr>
                   <th scope="row">Quốc Gia </th>
-                  <td colSpan="2">Hồng Kông</td>
+                  <td colSpan="2">{movie.country[0] ? movie.country[0].name : 'Đang cập nhật'}</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <ContentPost />
+          <PlayFilm video = {episodes} />
+          <ContentPost content = {filmDetail} />
         </div>
       </div>
     </div>

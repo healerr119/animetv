@@ -12,8 +12,10 @@ export default function ListFilm(ListFilm) {
                     return(
                         <div className='col-md-2' key={index}>
                                 <div className='swiper-image'>
+                                    <a href={`${film.slug}`}>
                                     <Image src={`${process.env.url_image}/${film.thumb_url}`} 
                                         width={220} height={250}  alt="image anime" />
+                                        </a>
                                 </div>
                                 <h3 className='name'> {film.name.substr(0, 20)}</h3>
                                 <span className='origin_name' >{film.origin_name.substr(0, 20)}</span>
@@ -24,6 +26,23 @@ export default function ListFilm(ListFilm) {
                         </div>
                     )
                 })}
+                <nav aria-label="Page navigation example">
+                    <ul className="pagination justify-content-end">
+                        <li className="page-item">
+                        <a className="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                        </li>
+                        <li className="page-item"><a className="page-link" href="#">1</a></li>
+                        <li className="page-item"><a className="page-link" href="#">2</a></li>
+                        <li className="page-item"><a className="page-link" href="#">3</a></li>
+                        <li className="page-item">
+                        <a className="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </>

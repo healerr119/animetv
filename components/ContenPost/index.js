@@ -1,7 +1,16 @@
 import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
-export default function ContentPost() {
+export default function ContentPost(content) {
+  const episodes = content.content.filmDetail.data.episodes;
+  const movie = content.content.filmDetail.data.movie;
+  const innerHTMLs = (data) => {
+      if (data) {
+          return { __html: data };
+      } else {
+          return { __html: "" };
+      }
+  };
   return (
     <div className="post-content">
             <div className="accordion" id="accordionExample">
@@ -24,17 +33,7 @@ export default function ContentPost() {
                   aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample"
                 >
-                  <div className="accordion-body">
-                    Diệp Vấn 4 là câu chuyện tiếp theo khi kết thúc phần 3, Diệp
-                    Vấn trở thành gà trống nuôi con khi vợ mất vì bệnh ung
-                    thư. Phần 4 tiếp tục mạch truyện trước nhưng mốc thời gian
-                    là vào năm 1964, lúc này Diệp Vấn đã hơn 70 tuổi. Phát hiện
-                    mình bị ung thư thanh quản do nhiều năm hút thuốc, chưởng
-                    môn họ Diệp sau đó đã quyết định sang San Francisco (Mỹ) để
-                    kiếm trường cho con và dạy võ. Thế nhưng người Mỹ lại không
-                    hiểu được võ thuật Trung Hoa. Đồng thời chính Diệp Vấn lại
-                    bị thử thách nhiều lần ngay trên đất Mỹ, nơi cộng đồng Hoa
-                    kiều bị dân Mỹ nhìn với ánh mắt phân biệt.
+                  <div className="accordion-body" dangerouslySetInnerHTML={innerHTMLs(movie.content)}>
                   </div>
                 </div>
               </div>
@@ -58,11 +57,11 @@ export default function ContentPost() {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    <strong>SEVER: VIETSUB #1</strong>{" "}
+                    <strong>{episodes[0].server_name}</strong>{" "}
                     <div>
                         <Link href="/">
                             <span className='Episodes'>
-                                Full
+                            {episodes[0].server_data[0].name}
                             </span>
                         </Link>
                     </div>
