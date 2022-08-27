@@ -5,7 +5,7 @@ import ContentPost from '../ContenPost';
 import PlayFilm from '../PlayFilm';
 
 export default function PostFilm(filmDetail) {
-  console.log(filmDetail);
+  console.log(45645654,filmDetail);
   const episodes = filmDetail.filmDetail.data.episodes;
   const movie = filmDetail.filmDetail.data.movie;
   return (
@@ -19,7 +19,7 @@ export default function PostFilm(filmDetail) {
           <div className="col-md-3 image-post">
             <Image
               src={movie.poster_url}
-              width={300}
+              width={250}
               height={370}
               alt="image film"
             />
@@ -34,7 +34,7 @@ export default function PostFilm(filmDetail) {
               <tbody>
                 <tr>
                   <th scope="row">Trạng thái </th>
-                  <td>{episodes[0].server_data[0].name}</td>
+                  <td>{episodes? episodes[0].server_data[0].name : ''}</td>
                 </tr>
                 <tr>
                   <th scope="row">Số tập </th>
@@ -58,7 +58,7 @@ export default function PostFilm(filmDetail) {
                 </tr>
                 <tr>
                   <th scope="row">Đạo Diễn </th>
-                  <td colSpan="2">{movie.director[0] ? movie.director[0] : 'Đang cập nhật'}</td>
+                  <td colSpan="2">{movie.director ? movie.director[0] : 'Đang cập nhật'}</td>
                 </tr>
                 <tr>
                   <th scope="row">Diễn Viên </th>
@@ -66,11 +66,11 @@ export default function PostFilm(filmDetail) {
                 </tr>
                 <tr>
                   <th scope="row">Thể Loại </th>
-                  <td colSpan="2">{movie.category[0] ? movie.category[0].name : 'Đang cập nhật'}</td>
+                  <td colSpan="2">{movie.category ? movie.category[0].name : 'Đang cập nhật'}</td>
                 </tr>
                 <tr>
                   <th scope="row">Quốc Gia </th>
-                  <td colSpan="2">{movie.country[0] ? movie.country[0].name : 'Đang cập nhật'}</td>
+                  <td colSpan="2">{movie.country ? movie.country[0].name : 'Đang cập nhật'}</td>
                 </tr>
               </tbody>
             </table>

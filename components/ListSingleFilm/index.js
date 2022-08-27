@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function ListSingleFilm(singleFilms) {
+    console.log(123123123,singleFilms);
     const films =  singleFilms.singleFilms.pageProps.data.items;
     return (
         <div className='container list-film'>

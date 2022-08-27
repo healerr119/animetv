@@ -389,6 +389,16 @@ a {
       padding-bottom: 20px;
       width: 50%;
     }
+    .list-film .total-page{
+      font-size: 10px;
+    }
+    .list-film .previous, .next{
+      font-size: 10px;
+    }
+    .list-film .number{
+      font-size: 12px;
+      padding: 6px 11px;
+    }
 }
 @media screen and (width: 820px){
   .hot-series .swiper.swiper-initialized{

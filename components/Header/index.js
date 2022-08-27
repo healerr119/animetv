@@ -50,15 +50,7 @@ export default function Header() {
                     Anime Hay
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link
-                    className="nav-link "
-                    href="/shows"
-                    aria-disabled="true"
-                  >
-                    Shows
-                  </Link>
-                </li>
+           
               </ul>
               <form className="d-flex search-header">
                 <input

@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import ListSingleFilm from '../ListSingleFilm'
-import News from '../News'
-import Pagination from '../Pagination'
 import useSWR from 'swr';
 import { useRouter } from 'next/router';
 export default function SingleFilm(singleFilms) {
   const [pageIndex, setPageIndex] = useState(1);
-  const  pagination = singleFilms.singleFilms.params.pagination;
   const router = useRouter();
   const {query} = router;
-  console.log(router);
   useEffect(()=> {
     if(query.page){
       let p = Number(query.page) >= 1 ? query.page : 1;
@@ -23,10 +19,14 @@ export default function SingleFilm(singleFilms) {
       router.replace(`?page=${p}`)
   };
   const fetcher = url => fetch(url).then(res => res.json())
-  const {data, error} = useSWR(`${process.env.url}/api/phim-moi?page=${pageIndex}`, 
-  fetcher)
+  const {data, error} =  useSWR(singleFilms.singleFilms.titlePage === "Phim Mới" ? `${process.env.api_phim_moi}?page=${pageIndex}`
+  : singleFilms.singleFilms.titlePage === "Phim Bộ" ? `${process.env.api_phim_bo}?page=${pageIndex}`
+  : singleFilms.singleFilms.titlePage === "Phim Lẻ" ?  `${process.env.api_phim_le}?page=${pageIndex}`
+  : singleFilms.singleFilms.titlePage === "Phim Hoạt Hình" ?  `${process.env.api_anime}?page=${pageIndex}`
+  :''
+  , fetcher) ;
+ 
   if (!data) return <div>Loading ...</div>
-  console.log(data);
   return (
     <div className="app main">
       {/* <News /> */}

@@ -57,11 +57,11 @@ export default function ContentPost(content) {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    <strong>{episodes[0].server_name}</strong>{" "}
+                    <strong>{episodes ? episodes[0].server_name: ''}</strong>{" "}
                     <div>
                         <Link href="/">
                             <span className='Episodes'>
-                            {episodes[0].server_data[0].name}
+                            {episodes ? episodes[0].server_data[0].name : ''}
                             </span>
                         </Link>
                     </div>

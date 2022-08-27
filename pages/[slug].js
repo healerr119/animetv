@@ -36,6 +36,7 @@ export async function getStaticPaths() {
   // `getStaticPaths` requires using `getStaticProps`
   export async function getStaticProps(context) {
     const slug = context.params.slug;
+    console.log(slug);
     const res = await fetch(`https://ophim1.com/phim/${slug}`)
     const data = await res.json()
     return {

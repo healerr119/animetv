@@ -5,15 +5,28 @@ import Footer from '../../components/Footer'
 import PageFilm from '../../components/PageFilm'
 import SingleFilm from '../../components/SingleFilm'
 
-export default function OddMovie() {
+export default function OddMovie({data}) {
   return (
     <>
         <Head>
 
         </Head>
         <Header />
-        <SingleFilm />
+        <SingleFilm singleFilms = {data.data.pageProps.data} />
         <Footer />
     </>
   )
+}
+
+export async function getStaticProps() {
+  // Call an external API endpoint to get posts.
+  // You can use any data fetching library
+  const page = 1;
+  const res = await fetch(`https://ophim.tv/_next/data/jMo1r8lC0F6IGwkz0ayh-/danh-sach/phim-le.json?slug=phim-le`)
+  const data = await res.json()
+  return {
+    props: { 
+      data: {data},
+    },
+  }
 }
