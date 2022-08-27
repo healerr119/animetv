@@ -21,7 +21,7 @@ export default function Home({data}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Main DataFilm = {data.data.pageProps.data.items} />
+      <Main DataFilm = {data.data.pageProps.data} />
       <Footer />
     </div>
   )

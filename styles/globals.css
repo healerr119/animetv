@@ -285,6 +285,35 @@ a {
   background-color: #161515;
   margin: 10px 0;
 }
+.list-film .previous,.next{
+  padding: 5px;
+    border-radius: 5px;
+    background: linear-gradient(90deg,#ffd670,#ffa42d 50%,#f7ba22) 0/200%;
+    font-weight: 600;
+}
+.list-film .number{
+  padding: 6px 15px;
+  background: linear-gradient(90deg,#229df7,#9aecff 50%,#f7ba22) 0/200%;
+    border-radius: 20px;
+    margin: 0 20px;
+}
+.list-film .space-x-2{
+  display: flex;
+  justify-content: space-between;
+}
+.list-film .total-page{
+  padding: 5px;
+    background: #4c4c4c;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+/* .list-film .next{
+  padding: 5px;
+    border-radius: 5px;
+    background: linear-gradient(90deg,#ffd670,#ffa42d 50%,#f7ba22) 0/200%;
+    font-weight: 600;
+} */
 /* end post detail  */
 @media only screen and (max-width: 420px){
     .swiper-slide{

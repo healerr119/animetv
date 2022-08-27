@@ -2,11 +2,11 @@ import Image from 'next/image';
 import React from 'react'
 
 export default function ListFilm(ListFilm) {
-    const films = ListFilm.ListFilm.DataFilm;
+    const films = ListFilm.ListFilm.DataFilm.items;
   return (
     <>
         <div className='container list-film'>
-            <h3 className='title'>Phim Mới</h3>
+            <h3 className='title'>Phim Mới Cập Nhật</h3>
             <div className='row'>
                 {films?.map((film, index) => {
                     return(
@@ -26,23 +26,25 @@ export default function ListFilm(ListFilm) {
                         </div>
                     )
                 })}
-                <nav aria-label="Page navigation example">
+                {/* <nav aria-label="Page navigation example">
                     <ul className="pagination justify-content-end">
                         <li className="page-item">
-                        <a className="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
+                            <a className="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
                         </li>
-                        <li className="page-item"><a className="page-link" href="#">1</a></li>
-                        <li className="page-item"><a className="page-link" href="#">2</a></li>
-                        <li className="page-item"><a className="page-link" href="#">3</a></li>
+                        <li className="page-item"><a className="page-link" href="#">{pagination.currentPage}</a></li>
+                        <li className="page-item"><a className="page-link" href="#">{pagination.currentPage + 1}</a></li>
+                        <li className="page-item"><a className="page-link" href="#">{pagination.currentPage + 2}</a></li>
+                        <li className="page-item"><a className="page-link" href="#">{pagination.currentPage + 3}</a></li>
+                        <li className="page-item"><a className="page-link" href="#">{pagination.currentPage + 4}</a></li>
                         <li className="page-item">
-                        <a className="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
+                            <a className="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
                         </li>
                     </ul>
-                </nav>
+                </nav> */}
             </div>
         </div>
     </>

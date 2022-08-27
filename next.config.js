@@ -15,7 +15,10 @@ const nextConfig = {
   },
   env: {
     url_home: 'phimhayhd.club',
-    url_image: 'https://img.ophim.cc/uploads/movies'
+    url_image: 'https://img.ophim.cc/uploads/movies',
+    url_api: 'https://ophim.tv',
+    url: 'http://localhost:3000'
+    // url: ''
   }
 }
 
