@@ -4,6 +4,7 @@ import Image from 'next/image';
 export default function ContentPost(content) {
   const episodes = content.content.filmDetail.data.episodes;
   const movie = content.content.filmDetail.data.movie;
+  console.log(episodes);
   const innerHTMLs = (data) => {
       if (data) {
           return { __html: data };
@@ -58,12 +59,19 @@ export default function ContentPost(content) {
                 >
                   <div className="accordion-body">
                     <strong>{episodes ? episodes[0].server_name: ''}</strong>{" "}
-                    <div>
-                        <Link href="/">
-                            <span className='Episodes'>
-                            {episodes ? episodes[0].server_data[0].name : ''}
-                            </span>
-                        </Link>
+                    <div className='main-Episodes'>
+                      {movie.type === "series" || movie.type === "hoathinh"   ? episodes[0].server_data?.map((episode, index) => {
+                        return (
+                          <Link  href={episode.link_embed} key={index}>
+                            <a target='_blank' rel="noopener noreferrer nofollow">
+                              <span className='Episodes'>
+                              {episode.name }
+                              </span>
+                              </a>
+                          </Link>
+                          )
+                        }) : movie.type === "single" ? episodes[0].server_data[0].name : ''
+                      }
                     </div>
                   </div>
                 </div>

@@ -1,11 +1,10 @@
 import React, { useEffect, useRef } from 'react'
 import videojs from "video.js";
 import "video.js/dist/video-js.css";
-import ContentPost from '../ContenPost';
 
 export default function PlayFilm(video) {
     const link = video.video ? video.video[0].server_data[0].link_m3u8 : '';
-    console.log(link);
+    console.log(video);
     const videoRef = useRef(null);
     useEffect(() => {
         if (videoRef.current) {

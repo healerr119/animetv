@@ -5,7 +5,6 @@ import ContentPost from '../ContenPost';
 import PlayFilm from '../PlayFilm';
 
 export default function PostFilm(filmDetail) {
-  console.log(45645654,filmDetail);
   const episodes = filmDetail.filmDetail.data.episodes;
   const movie = filmDetail.filmDetail.data.movie;
   return (
@@ -19,8 +18,8 @@ export default function PostFilm(filmDetail) {
           <div className="col-md-3 image-post">
             <Image
               src={movie.poster_url}
-              width={250}
-              height={370}
+              width={220}
+              height={250}
               alt="image film"
             />
             {/* <div className="btn-play">

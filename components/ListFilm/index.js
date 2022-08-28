@@ -16,35 +16,23 @@ export default function ListFilm(ListFilm) {
                                     <Image src={`${process.env.url_image}/${film.thumb_url}`} 
                                         width={220} height={250}  alt="image anime" />
                                         </a>
+                                    <div className="episode_latest">
+                                        {film.episode_current}
+                                    </div>
                                 </div>
-                                <h3 className='name'> {film.name.substr(0, 20)}</h3>
+                                <a href={`${film.slug}`}>
+                                    <h3 className='name'> {film.name}</h3>
+                                </a>
                                 <span className='origin_name' >{film.origin_name.substr(0, 20)}</span>
                                 <div className='item'>
                                     <span className='sub'> {film.lang}</span>
-                                    <span className='play-film'> Xem Phim</span>
+                                    <a href={`${film.slug}`}>
+                                        <span className='play-film'> Xem Phim</span>
+                                    </a>
                                 </div>
                         </div>
                     )
                 })}
-                {/* <nav aria-label="Page navigation example">
-                    <ul className="pagination justify-content-end">
-                        <li className="page-item">
-                            <a className="page-link" href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li className="page-item"><a className="page-link" href="#">{pagination.currentPage}</a></li>
-                        <li className="page-item"><a className="page-link" href="#">{pagination.currentPage + 1}</a></li>
-                        <li className="page-item"><a className="page-link" href="#">{pagination.currentPage + 2}</a></li>
-                        <li className="page-item"><a className="page-link" href="#">{pagination.currentPage + 3}</a></li>
-                        <li className="page-item"><a className="page-link" href="#">{pagination.currentPage + 4}</a></li>
-                        <li className="page-item">
-                            <a className="page-link" href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav> */}
             </div>
         </div>
     </>
