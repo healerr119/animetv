@@ -17,9 +17,9 @@ export default function PostFilm(filmDetail) {
           </div>
           <div className="col-md-3 image-post">
             <Image
-              src={movie.poster_url}
-              width={220}
-              height={250}
+              src={movie.thumb_url}
+              width={270}
+              height={400}
               alt="image film"
             />
             {/* <div className="btn-play">
