@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ListSingleFilm from '../ListSingleFilm'
 import useSWR from 'swr';
 import { useRouter } from 'next/router';
+import Loading from '../Loading';
 export default function SingleFilm(singleFilms) {
   const [pageIndex, setPageIndex] = useState(1);
   const router = useRouter();
@@ -26,7 +27,7 @@ export default function SingleFilm(singleFilms) {
   :''
   , fetcher) ;
  
-  if (!data) return <div>Loading ...</div>
+  if (!data) return <Loading />
   return (
     <div className="app main">
       {/* <News /> */}

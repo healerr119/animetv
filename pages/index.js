@@ -19,7 +19,7 @@ export default function Home({data}) {
         <meta name="twitter:title" content={data.data.pageProps.data.seoOnPage.titleHead}></meta>
         <meta name="twitter:description" content={data.data.pageProps.data.seoOnPage.descriptionHead}></meta>
         <meta property="og:locale" content="vi_VN"></meta>
-        <link rel="icon" href="/favicon-films.png" />
+        <link rel="icon" href="/phimhaydd.png" />
       </Head>
       <Header />
       <Main DataFilm = {data.data.pageProps.data} />
@@ -38,5 +38,6 @@ export async function getStaticProps() {
     props: { 
       data: {data},
     },
+    revalidate: 10, // In seconds
   }
 }

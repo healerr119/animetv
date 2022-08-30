@@ -109,7 +109,17 @@ header {
   color: #fff;
 }
 .form-control:focus{
-  box-shadow: 0 0 0 0.25rem rgb(100 96 94 / 44%) !important;
+  box-shadow: 0 0 0 1px rgb(237 114 36) !important;
+}
+.btn.btn-outline-success{
+  padding: 0;
+    width: 150px;
+    border: 1px solid orange;
+    color: orange;
+}
+.btn.btn-outline-success:hover{
+  background-color: #ff802754;
+  border: 1px solid orange;
 }
 /* .hot-series .swiper.swiper-initialized{
   padding: 20px 0 0 45px;
@@ -353,6 +363,15 @@ a {
 }
 span.Episodes:hover {
   background-color: #7564ff;
+}
+.loading{
+  margin-top: 70px;
+  background-color: #0c0c0c;
+  height: 100vh;
+}
+.loading .spinner-border{
+  top: 50%;
+  position: absolute;
 }
 /* .list-film .next{
   padding: 5px;
