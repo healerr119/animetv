@@ -105,6 +105,12 @@ header {
   background: linear-gradient(90deg,#f7ba22,#f49a25 50%,#f7ba22) 0/200%;
 }
 
+#navbarSupportedContent .search-header input{
+  color: #fff;
+}
+.form-control:focus{
+  box-shadow: 0 0 0 0.25rem rgb(100 96 94 / 44%) !important;
+}
 /* .hot-series .swiper.swiper-initialized{
   padding: 20px 0 0 45px;
 } */

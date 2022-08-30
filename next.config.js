@@ -17,10 +17,11 @@ const nextConfig = {
     url_home: 'phimhayhd.club',
     url_image: 'https://img.ophim.cc/uploads/movies',
     url_api: 'https://ophim.tv',
-    api_phim_moi: 'https://animetv-rho.vercel.app/api/phim-moi',
-    api_phim_bo: 'https://animetv-rho.vercel.app/api/phim-bo',
-    api_phim_le: 'https://animetv-rho.vercel.app/api/phim-le',
-    api_anime: 'https://animetv-rho.vercel.app/api/anime'
+    api_phim_moi: 'https://phimhayhd.club/api/phim-moi',
+    api_phim_bo: 'https://phimhayhd.club/api/phim-bo',
+    api_phim_le: 'https://phimhayhd.club/api/phim-le',
+    api_anime: 'https://phimhayhd.club/api/anime',
+    NEXT_PUBLIC_GOOGLE_ANALYTICS: 'G-T7HVSJLJHT'
     // url: ''
   }
 }
