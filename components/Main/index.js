@@ -8,7 +8,7 @@ export default function Main(DataFilm) {
   const {query} = router;
   const search = query.timkiem;
   const fetcher = url => fetch(url).then(res => res.json())
-  const {data, error} =  useSWR(`http://localhost:3000/api/tim-kiem?search=${search}`, fetcher)
+  const {data, error} =  useSWR(`${process.env.api_search}?search=${search}`, fetcher)
   if (!data) return <Loading />
   return (
     <div className='app main'>

@@ -21,7 +21,7 @@ const nextConfig = {
     api_phim_bo: 'https://phimhayhd.club/api/phim-bo',
     api_phim_le: 'https://phimhayhd.club/api/phim-le',
     api_anime: 'https://phimhayhd.club/api/anime',
-    api_anime: 'https://phimhayhd.club/api/tim-kiem',
+    api_search: 'https://phimhayhd.club/api/tim-kiem',
     NEXT_PUBLIC_GOOGLE_ANALYTICS: 'G-T7HVSJLJHT'
     // url: ''
   }
