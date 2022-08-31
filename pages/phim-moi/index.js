@@ -4,7 +4,7 @@ import SingleFilm from '../../components/SingleFilm'
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 export default function FilmNews({data}) {
-  console.log(data);
+  // console.log(data);
   return (
    <>
        <Head>

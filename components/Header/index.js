@@ -1,8 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react'
-
+import React, { useState } from 'react'
+import { useRouter } from 'next/router';
 export default function Header() {
+
+  const [search, setSearch] = useState('')
+  const router = useRouter()
+  const {query, pathname} = router;
+  const handleSearch = (e) => {
+    e.preventDefault()
+    if(pathname !== "/") return;
+    router.replace(`?timkiem=${search}`)
+    setSearch('')
+  }
   return (
     <>
       <header className='w-100'>
@@ -52,16 +62,18 @@ export default function Header() {
                 </li>
            
               </ul>
-              <form className="d-flex search-header">
+              <form className="d-flex search-header" onSubmit={handleSearch}>
                 <input
                   className="form-control me-2"
                   type="search"
                   placeholder="Tên phim..."
                   aria-label="Search"
+                  value={search}
+                  onChange={e => setSearch( e.target.value)}
                 />
-                {/* <button className="btn btn-outline-success" type="submit">
-                  Search
-                </button> */}
+                <button className="btn btn-outline-success" type="submit">
+                  Tìm kiếm
+                </button> 
               </form>
             </div>
           </div>

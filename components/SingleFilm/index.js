@@ -15,7 +15,6 @@ export default function SingleFilm(singleFilms) {
   })
 
   const pageNumClick = (pageIndex) => {
-      console.log(pageIndex);
       let p = pageIndex >= 1 ? pageIndex : 1;
       router.replace(`?page=${p}`)
   };

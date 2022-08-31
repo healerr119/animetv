@@ -1,12 +1,18 @@
 import Image from 'next/image';
 import React from 'react'
 
-export default function ListFilm(ListFilm) {
-    const films = ListFilm.ListFilm.DataFilm.items;
+export default function ListFilm({ListFilm, SearchFilm}) {
+    let films = '';
+    if(SearchFilm.params.keyword != "undefined")
+    {
+         films = SearchFilm.items;
+    }else{
+            films = ListFilm.DataFilm.items;
+    }
   return (
     <>
         <div className='container list-film'>
-            <h3 className='title'>Phim Mới Cập Nhật</h3>
+            <h3 className='title'>{SearchFilm.params.keyword != "undefined" ? SearchFilm.titlePage : 'Phim Mới Cập Nhật'}</h3>
             <div className='row'>
                 {films?.map((film, index) => {
                     return(

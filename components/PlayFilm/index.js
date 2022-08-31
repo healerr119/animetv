@@ -4,7 +4,7 @@ import "video.js/dist/video-js.css";
 
 export default function PlayFilm(video) {
     const link = video.video ? video.video[0].server_data[0].link_m3u8 : '';
-    console.log(video);
+    // console.log(video);
     const videoRef = useRef(null);
     useEffect(() => {
         if (videoRef.current) {
