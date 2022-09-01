@@ -58,7 +58,7 @@ export default function ContentPost(content) {
                 >
                   <div className="accordion-body">
                     <strong>{episodes ? episodes[0].server_name: ''}</strong>{" "}
-                    <div className='container main-Episodes'>
+                    <div className='grid grid-cols-3 md:grid-cols-6 lg:grid-cols-16 gap-2 main-Episodes'>
                       {movie.type === "series" || movie.type === "hoathinh"   ? episodes[0].server_data?.map((episode, index) => {
                         return (
                               <Link  href={episode.link_embed} key={index}>

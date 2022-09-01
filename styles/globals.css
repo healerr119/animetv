@@ -373,7 +373,15 @@ span.Episodes:hover {
   top: 50%;
   position: absolute;
 }
-
+.grid{
+  display: grid;
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(23,minmax(0,1fr));
+}
+.grid a {
+  padding: 10px 0;
+}
 /* .list-film .next{
   padding: 5px;
     border-radius: 5px;
@@ -465,6 +473,15 @@ span.Episodes:hover {
       font-size: 12px;
       padding: 6px 11px;
     }
+    .grid{
+      display: grid;
+    }
+    .grid-cols-3 {
+      grid-template-columns: repeat(5,minmax(0,1fr));
+    }
+    .grid a {
+      padding: 10px 0;
+    }
 }
 @media screen and (width: 820px){
   .hot-series .swiper.swiper-initialized{
@@ -486,6 +503,15 @@ span.Episodes:hover {
   .swiper-slide .name {
     font-size: 16px;
   }
+  .grid{
+    display: grid;
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(12,minmax(0,1fr));
+  }
+  .grid a {
+    padding: 10px 0;
+  }
 }
 @media screen and (width: 768px){
   .hot-series .swiper.swiper-initialized{
@@ -506,5 +532,14 @@ span.Episodes:hover {
   }
   .swiper-slide .name {
     font-size: 16px;
+  }
+  .grid{
+    display: grid;
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(10,minmax(0,1fr));
+  }
+  .grid a {
+    padding: 10px 0;
   }
 }
